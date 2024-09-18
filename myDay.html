@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="./myDay.js" defer></script>
+    <title>My-Day</title>
+  </head>
+  <body>
+    <main>
+      <section class="flex w-full justify-between p-[8px_16px]">
+        <button type="button" id="departments-part">
+          <img
+            id="img"
+            class="h-[16px] w-[18px]"
+            src="./images/sections-img.png"
+            alt="sections-img"
+          />
+        </button>
+
+        <div class="flex items-center gap-[12px]">
+          <button type="button" id="search-bar">
+            <img src="./images/search-bar-img.png" alt="search-bar-img" />
+          </button>
+          <div class="h-[16px] w-[1px] bg-[#82868F]"></div>
+          <img src="./images/acc-img.png" alt="acc-img" />
+        </div>
+      </section>
+
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search tasks..."
+        class="relative left-[100px] mt-[16px] hidden rounded-lg border-none p-2 shadow-inputShadow"
+      />
+
+      <form
+        id="form"
+        class="m-auto mt-[32px] flex h-[48px] w-[343px] items-center gap-[10px] rounded-lg bg-[#FFF] p-[10px_14px] shadow-inputShadow"
+      >
+        <div class="flex items-center justify-center">
+          <button id="add-button" type="submit">
+            <img src="./images/add-icon-img.png" alt="add-icon-img" />
+          </button>
+        </div>
+        <input id="add-task" type="text" placeholder="Add a task" />
+      </form>
+
+      <!-- div for tasksList-->
+      <div id="task-list" class="mt-6 flex flex-col gap-3 p-[16px]"></div>
+
+      <!-- window for make a choice:completed or importance -->
+      <div
+        id="departments-window"
+        class="absolute left-[10px] top-[50px] z-[1] hidden rounded-md bg-[black] p-[16px]"
+      >
+        <button
+          id="completed-btn"
+          class="mb-2 block w-full rounded bg-gray-200 p-2 text-left"
+        >
+          View Completed Tasks
+        </button>
+
+        <button id="important-btn" class="block w-full rounded bg-gray-200 p-2">
+          View Important Tasks
+        </button>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./index.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <title>Todo-App</title>
+  </head>
+  <body>
+    <main
+      class="flex min-w-[343px] flex-col items-center justify-center px-[16px] pb-[121px] pt-[72px]"
+    >
+      <div class="flex flex-col items-center justify-center gap-[32px]">
+        <img src="./images/elipse-img.png" alt="elipse-img" />
+        <h2 class="font-roboto text-[32px] font-medium text-[#0059AC]">
+          Sign in
+        </h2>
+      </div>
+
+      <div class="mt-[48px]">
+        <form class="w-[343px]" id="form">
+          <div class="flex flex-col gap-[16px]">
+            <input
+              id="email"
+              class="h-[56px] rounded-xl border border-solid border-[#E6E8EB]"
+              type="email"
+              placeholder="Enter your username or Email"
+              required
+            />
+            <input
+              id="password"
+              required
+              type="password"
+              placeholder="Enter your Password"
+              class="h-[56px] rounded-xl border border-solid border-[#E6E8EB]"
+            />
+          </div>
+
+          <div class="mt-[14px]">
+            <a
+              class="font-roboto text-[14px] font-normal text-[#252931s]"
+              href="#"
+              >Forgot password?</a
+            >
+          </div>
+
+          <button
+            type="submit"
+            id="signInButton"
+            class="mt-[24px] h-[56px] w-[343px] rounded-[30px] bg-[#477EE7] p-[10px] font-roboto text-[16px] font-medium text-[#FFF]"
+          >
+            Sign in
+          </button>
+
+          <div class="mt-[32px] flex w-[343px] items-center gap-[14px]">
+            <div class="h-[1px] w-[150px] bg-[#CFD3DA]"></div>
+            <p class="font-roboto text-[14px] font-normal text-[#252931]">Or</p>
+            <div class="h-[1px] w-[150px] bg-[#CFD3DA]"></div>
+          </div>
+
+          <button
+            id="google-sign-in-button"
+            class="mt-[32px] flex h-[56px] w-[343px] items-center justify-center gap-[12px] rounded-[30px] border border-solid border-[#CFD3D9] p-[10px]"
+          >
+            <img src="./images/google-img.png" alt="google-img" />
+            <span>Sign in with Google</span>
+          </button>
+
+          <div class="mt-[32px] flex items-center justify-center gap-[4px]">
+            <p class="font-roboto text-[14px] font-normal">
+              Don't have an account?
+            </p>
+            <a
+              class="font-roboto text-[14px] font-medium underline"
+              href="./signUpPage.html"
+              >Sign up</a
+            >
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
